@@ -1,13 +1,29 @@
 package com.javarush.task.task36.task3608.model;
 
+import com.javarush.task.task36.task3608.bean.User;
+
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by Пользователь on 14.06.2017.
  */
 public class FakeModel implements Model{
-    ModelData modelData=getModelData();
+    private ModelData modelData = new ModelData();
 
-    @Override
+
     public ModelData getModelData() {
-        return null;
+        return modelData;
+    }
+
+    public void loadUsers() {
+
+        User user1 = new User("a",1,1);
+        User user2 = new User("abb",2,1);
+        List<User> list = new ArrayList<>();
+        list.add(user1);
+        list.add(user2);
+        modelData.setUsers(list);
+
     }
 }
