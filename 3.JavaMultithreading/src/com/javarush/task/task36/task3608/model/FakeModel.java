@@ -9,7 +9,8 @@ import java.util.List;
  * Created by Пользователь on 14.06.2017.
  */
 public class FakeModel implements Model{
-    private ModelData modelData = new ModelData();
+
+    private ModelData modelData=new ModelData();
 
 
     public ModelData getModelData() {
@@ -18,8 +19,8 @@ public class FakeModel implements Model{
 
     public void loadUsers() {
 
-        User user1 = new User("a",1,1);
-        User user2 = new User("abb",2,1);
+        User user1 = new User("A",1,1);
+        User user2 = new User("B",2,1);
         List<User> list = new ArrayList<>();
         list.add(user1);
         list.add(user2);
