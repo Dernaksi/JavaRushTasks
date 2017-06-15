@@ -17,6 +17,6 @@ public class EditUserView implements View{
     public void setController(Controller controller) {
         this.controller = controller;
     }
-
+    public void fireEventUserChanged(String name, long id, int level){controller.onUserChange(name, id, level);}
 
 }
